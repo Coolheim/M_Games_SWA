@@ -72,7 +72,11 @@ html, body {
 }
 
 footer {
-    background-color: #f0f0f0; /* Barva pozadí zápatí */
     padding: 20px; /* Polstrování zápatí */
     text-align: center; /* Zarovnání textu na střed */
+}
+
+form {
+    padding: 10px;
+    margin: 10px;
 }
