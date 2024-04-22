@@ -44,7 +44,6 @@ body {
 
 main {
     padding: 30px; /* Odsazení pro lepší čitelnost obsahu */
-    
 }
 
 header {
@@ -62,7 +61,7 @@ html, body {
     display: flex; /* Použití flexboxu pro kontejner */
     justify-content: center; /* Zarovnání na ose x */
     align-items: center; /* Zarovnání na ose y */
-
+    padding-bottom: 20px;
 }
 
 .menuBTN a {
@@ -71,7 +70,56 @@ html, body {
     text-decoration: none; /* Odstranění podtržení */
 }
 
+
+
 footer {
-    padding: 20px; /* Polstrování zápatí */
+    padding: 5px; /* Polstrování zápatí */
     text-align: center; /* Zarovnání textu na střed */
+    border-top: 3px solid black;
+    font-family: Arial;
+    font-size: 20px;
 }
+
+
+ /* -------------------------------------------------------------------------- */
+form {
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #919191;
+    border-radius: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 3px;
+
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(4, 12, 124);
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    font-family: Arial;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(29, 89, 202);
+}
+

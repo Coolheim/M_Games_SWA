@@ -31,3 +31,11 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #45a049; /* Barva pozadí tlačítka Odeslat při najetí myší */
 }
+
+
+<!-- <img id="imgMenu1" src="images/tetris_img_1.png" height="250" width="250">
+        <img id="imgMenu2" src="images/tetris_img_3.png" height="150" width="150">
+        <img id="imgMenu3" src="images/tetris_img_4.png" height="150" width="150">
+        <img id="imgMenu4" src="images/tetris_img_6.png" height="150" width="150">
+        <img id="imgMenu5" src="images/tetris_img_2.png" height="150" width="150">
+        <img id="imgMenu6" src="images/tetris_img_5.png" height="150" width="150"> -->
