@@ -11,12 +11,19 @@
     <?php include "php/header.php" ?>
 
     <main>
-        <div>
-            <a href="#" class="btn1">Přihlášení</a>
+        <div class="menuBTN">
+            <a href="php/prihlaseni.php" class="btn1">Přihlášení</a>
             <a href="#" class="btn2">Play</a>
             <a href="#" class="btn1">Pravidla</a>
         </div>
+
+        <img src="images/tetris_img_1.png">
+        <img src="images/tetris_img_2.png">
+        <img src="images/tetris_img_3.png">
+        <img src="images/tetris_img_4.png">
+
     </main>
+    
 
     <script src="script.js"></script>
 </body>

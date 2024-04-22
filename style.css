@@ -9,9 +9,6 @@ h1 {
     padding: 10px 20px;
 }
 
-header {
-    text-align: center;
-}
 
 .btn1 {
     text-decoration: none;
@@ -42,5 +39,35 @@ header {
 }
 
 body {
-    background-color: rgb(63, 63, 63);
+    background-color: #fff;
 }
+
+main {
+    padding: 30px; /* Odsazení pro lepší čitelnost obsahu */
+    
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 3px solid black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuBTN {
+    display: flex; /* Použití flexboxu pro kontejner */
+    justify-content: center; /* Zarovnání na ose x */
+    align-items: center; /* Zarovnání na ose y */
+
+}
+
+.menuBTN a {
+    padding: 10px 20px; /* Polstrování pro odkazy */
+    margin-right: 10px; /* Odsazení mezi odkazy */
+    text-decoration: none; /* Odstranění podtržení */
+}
+
