@@ -21,6 +21,8 @@
         <img src="images/tetris_img_2.png">
         <img src="images/tetris_img_3.png">
         <img src="images/tetris_img_4.png">
+        <img src="images/tetris_img_5.png">
+        <img src="images/tetris_img_6.png">
 
     </main>
     
