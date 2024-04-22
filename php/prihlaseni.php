@@ -9,7 +9,7 @@
 <body>
     <?php include "header.php" ?>
 
-    <main class="main">
+    <main>
         <form>
             <input type="text" placeholder="Uživatelské jméno"><br>
             <input type="email" placeholder="E-mail"><br>

@@ -1,0 +1,33 @@
+form {
+    max-width: 300px; /* Maximální šířka formuláře */
+    margin: 0 auto; /* Zarovnání formuláře na střed stránky */
+    padding: 20px; /* Vnitřní okraj formuláře */
+    background-color: #f4f4f4; /* Barva pozadí formuláře */
+    border-radius: 8px; /* Zaoblené rohy */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Stínování */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%; /* Šířka vstupních polí na 100% */
+    padding: 10px; /* Polstrování vstupních polí */
+    margin-bottom: 15px; /* Odsazení mezi vstupními poli */
+    border: 1px solid #ccc; /* Rámeček vstupních polí */
+    border-radius: 5px; /* Zaoblené rohy vstupních polí */
+    box-sizing: border-box; /* Velikost vstupních polí zahrnuje rámeček */
+}
+
+form input[type="submit"] {
+    background-color: #4caf50; /* Barva pozadí tlačítka Odeslat */
+    color: white; /* Barva textu tlačítka Odeslat */
+    padding: 10px 20px; /* Polstrování tlačítka Odeslat */
+    border: none; /* Žádný rámec tlačítka Odeslat */
+    border-radius: 5px; /* Zaoblené rohy tlačítka Odeslat */
+    cursor: pointer; /* Změna kurzoru na ukazatel */
+    transition: background-color 0.3s; /* Animace změny barvy pozadí */
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Barva pozadí tlačítka Odeslat při najetí myší */
+}
