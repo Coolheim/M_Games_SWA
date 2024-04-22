@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+}
+
+#board {
+    background-color: black;
+    border-top: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    color: #fff;
+    background-color: rgb(4, 12, 124);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+header {
+    text-align: center;
+    /* padding: 5px; */
+    border-bottom: 3px solid black;
+}
+
+/* #pongDiv {
+    padding: 20px;
+} */
+
+.menuBTN {
+    display: flex; /* Použití flexboxu pro kontejner */
+    justify-content: center; /* Zarovnání na ose x */
+    align-items: center; /* Zarovnání na ose y */
+    padding: 15px;
+}
+
+.menuBTN a {
+    padding: 10px 20px; /* Polstrování pro odkazy */
+    margin-right: 10px; /* Odsazení mezi odkazy */
+    text-decoration: none; /* Odstranění podtržení */
+}
+
+.btn1 {
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: rgb(0, 58, 167);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.btn1:hover {
+    background-color: rgb(29, 89, 202);
+}

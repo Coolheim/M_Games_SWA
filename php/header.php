@@ -1,4 +1,4 @@
 
 <header>
-    <h1>M - Tetris</h1>
+    <h1>M - Games</h1>
 </header>
