@@ -15,7 +15,7 @@
     </div>
 
     <a id="pongButton" href="games/pong.php">
-        <img src="../images/ping-pong.png" alt="Ping Pong" height="100" width="100">
+        <img src="../images/ping-pong.png" alt="Ping Pong" height="200" width="200">
         <br>
         <span>Pong</span>
     </a>
