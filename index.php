@@ -16,16 +16,15 @@
             <a href="#" class="btn2">Play</a>
             <a href="#" class="btn1">Pravidla</a>
         </div>
-
         <img src="images/tetris_img_1.png">
         <img src="images/tetris_img_2.png">
         <img src="images/tetris_img_3.png">
         <img src="images/tetris_img_4.png">
         <img src="images/tetris_img_5.png">
         <img src="images/tetris_img_6.png">
-
     </main>
     
+    <?php include "php/footer.php" ?>
 
     <script src="script.js"></script>
 </body>

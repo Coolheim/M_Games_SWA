@@ -71,3 +71,8 @@ html, body {
     text-decoration: none; /* Odstranění podtržení */
 }
 
+footer {
+    background-color: #f0f0f0; /* Barva pozadí zápatí */
+    padding: 20px; /* Polstrování zápatí */
+    text-align: center; /* Zarovnání textu na střed */
+}

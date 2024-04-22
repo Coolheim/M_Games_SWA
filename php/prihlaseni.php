@@ -8,5 +8,15 @@
 </head>
 <body>
     <?php include "header.php" ?>
+
+    <main>
+        <form>
+            <input type="text" placeholder="Uživatelské jméno"><br>
+            <input type="email" placeholder="E-mail"><br>
+            <input type="password" placeholder="Password"><br>
+            <input type="submit">
+        </form>
+    </main>
+
 </body>
 </html>
