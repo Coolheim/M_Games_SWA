@@ -6,7 +6,6 @@ body {
     background-color: black;
     border-top: 5px solid skyblue;
     border-bottom: 5px solid skyblue;
-    
 }
 
 h1 {
@@ -24,6 +23,7 @@ header {
     text-align: center;
     /* padding: 5px; */
     border-bottom: 3px solid black;
+    background-image: linear-gradient(to right, #e24d24, #4a34f1);
 }
 
 /* #pongDiv {
@@ -56,3 +56,19 @@ header {
 .btn1:hover {
     background-color: rgb(29, 89, 202);
 }
+/* ######################################### */
+/* --- Body + main --- */
+/* Body */
+body {
+    background-color: #fff;
+}
+/* Main */
+main {
+    padding: 30px;
+}
+/* html, body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* ######################################### */

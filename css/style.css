@@ -1,3 +1,14 @@
+/* ######################################### */
+/* --- Header + H1 --- */
+/* Hlavička stránky */
+header {
+    
+    text-align: center;
+    padding: 5px;
+    border-bottom: 3px solid black;
+    background-image: linear-gradient(to right, #e24d24, #4a34f1);
+}
+/* Nadpis */
 h1 {
     text-align: center;
     font-size: 75px;
@@ -7,9 +18,12 @@ h1 {
     border-radius: 20px;
     display: inline-block;
     padding: 10px 20px;
+    border: 2px solid black;
+    
 }
-
-
+/* ######################################### */
+/* --- Menu + Tlačítka --- */
+/* Tlačítka */
 .btn1 {
     text-decoration: none;
     text-align: center;
@@ -23,7 +37,6 @@ h1 {
 .btn1:hover {
     background-color: rgb(29, 89, 202);
 }
-
 .btn2 {
     text-decoration: none;
     text-align: center;
@@ -38,88 +51,33 @@ h1 {
     background-color: rgb(26, 36, 173);
 }
 
+/* Menu */
+.menuBTN {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 20px;
+}
+.menuBTN a {
+    padding: 10px 20px; 
+    margin-right: 10px;
+    text-decoration: none;
+}
+/* ######################################### */
+/* --- Body + main --- */
+/* Body */
 body {
     background-color: #fff;
+    
 }
-
+/* Main */
 main {
-    padding: 30px; /* Odsazení pro lepší čitelnost obsahu */
+    padding: 30px;
 }
-
-header {
-    text-align: center;
-    padding: 5px;
-    border-bottom: 3px solid black;
-}
-
+/* html, body */
 html, body {
     margin: 0;
     padding: 0;
 }
-
-.menuBTN {
-    display: flex; /* Použití flexboxu pro kontejner */
-    justify-content: center; /* Zarovnání na ose x */
-    align-items: center; /* Zarovnání na ose y */
-    padding-bottom: 20px;
-}
-
-.menuBTN a {
-    padding: 10px 20px; /* Polstrování pro odkazy */
-    margin-right: 10px; /* Odsazení mezi odkazy */
-    text-decoration: none; /* Odstranění podtržení */
-}
-
-
-
-footer {
-    padding: 5px; /* Polstrování zápatí */
-    text-align: center; /* Zarovnání textu na střed */
-    border-top: 3px solid black;
-    font-family: Arial;
-    font-size: 20px;
-}
-
-
- /* -------------------------------------------------------------------------- */
-form {
-    max-width: 35%;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: #919191;
-    border-radius: 15px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    border-radius: 3px;
-
-    font-family: Arial;
-    font-size: 20px;
-    text-align: center;
-}
-
-input[type="submit"] {
-    width: 100%;
-    background-color: rgb(4, 12, 124);
-    color: white;
-    padding: 10px 0;
-    margin-top: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-
-    font-family: Arial;
-    font-size: 20px;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(29, 89, 202);
-}
+/* ######################################### */
 

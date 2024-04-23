@@ -13,6 +13,7 @@ header {
     text-align: center;
     /* padding: 5px; */
     border-bottom: 3px solid black;
+    background-image: linear-gradient(to right, #e24d24, #4a34f1);
 }
 
 /* #pongDiv {
@@ -52,7 +53,7 @@ header {
     padding: 25px;
     border: 4px solid black;
     border-radius: 5px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(218, 217, 217);
     text-align: center;
     text-decoration: none;
     margin: 0 auto; /* Horizontální zarovnání na střed */
@@ -74,3 +75,19 @@ header {
     color: black;
 }
 
+/* ######################################### */
+/* --- Body + main --- */
+/* Body */
+body {
+    background-color: #fff;
+}
+/* Main */
+main {
+    padding: 30px;
+}
+/* html, body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* ######################################### */
