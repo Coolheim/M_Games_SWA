@@ -13,7 +13,6 @@ h1 {
 header {
     text-align: center;
     /* padding: 5px; */
-    border-bottom: 3px solid black;
     background-image: linear-gradient(to right, #e24d24, #4a34f1);
 }
 
@@ -53,7 +52,7 @@ header {
 /* --- Body + main --- */
 /* Body */
 body {
-    background-color: #fff;
+    background-color: #222222;
 }
 /* Main */
 main {

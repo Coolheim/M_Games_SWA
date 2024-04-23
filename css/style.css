@@ -5,7 +5,7 @@ header {
     
     text-align: center;
     padding: 5px;
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     background-image: linear-gradient(to right, #e24d24, #4a34f1);
 }
 /* Nadpis */
@@ -67,8 +67,7 @@ h1 {
 /* --- Body + main --- */
 /* Body */
 body {
-    background-color: #535353;
-    
+    background-color: #222222;
 }
 /* Main */
 main {
