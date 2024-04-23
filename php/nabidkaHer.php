@@ -14,14 +14,20 @@
         <a href="../index.php" class="btn1">Domů</a>
     </div>
 
-    <a id="pongButton" href="games/pong.php">
-        <img src="../images/ping-pong.png" alt="Ping Pong" height="200" width="200">
+    <div class="gamesDiv">
+    <a class="pongButton" href="games/pong.php">
+        <img src="../images/ping-pong.png" height="200" width="200">
         <br>
         <span>Pong</span>
     </a>
 
+    <a class="pongButton" href="games/breakout.php">
+        <img src="../images/breakout.png" height="200" width="200">
+        <br>
+        <span>Breakout</span>
+    </a>
+</div>
 
-
-
+    
 </body>
 </html>
