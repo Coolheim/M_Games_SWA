@@ -20,8 +20,8 @@ let player = {
 //ball
 let ballWidth = 10;
 let ballHeight = 10;
-let ballVelocityX = 3/2; //15 for testing, 3 normal
-let ballVelocityY = 2/2; //10 for testing, 2 normal
+let ballVelocityX = 3; //15 for testing, 3 normal
+let ballVelocityY = 2; //10 for testing, 2 normal
 
 let ball = {
     x : boardWidth/2,
