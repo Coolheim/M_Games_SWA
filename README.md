@@ -1,6 +1,6 @@
 # M - Games
 
-## tato stránka bude dvě a více mini her naprogramované zapomocí javascriptu 
+## tato stránka bude mít dvě a více mini her naprogramované zapomocí javascriptu 
 
 ## Struktura
 #### > css - využití k nastylování stránek 
@@ -9,7 +9,7 @@
 #### --- pong.css
 #### --- prihlaseni.css
 #### --- style.css
-#### > images - vyuití k logům a zlepšení dojmu ze stránky
+#### > images - využití k logům a zlepšení dojmu ze stránky
 #### --- breakout.png
 #### --- ping-pong.png
 #### > php - na tomto se píše ten hlavni kod co jde vidět na stránce
