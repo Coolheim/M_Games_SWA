@@ -18,6 +18,11 @@
         </div>
     </main>
     
+
+    <footer>
+        &copy; M - games
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
