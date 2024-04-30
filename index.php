@@ -14,7 +14,7 @@
         <div class="menuBTN">
             <a href="php/prihlaseni.php" class="btn1">Přihlášení</a>
             <a href="php/nabidkaHer.php" class="btn2">Play</a>
-            <a href="#" class="btn1">Pravidla</a>
+            <a href="#" class="btn1">Kontakt</a>
         </div>
     </main>
     
