@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M_Games - prihlaseni</title>
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="icon" type="image/x-icon" href="../images/mgames_favicon.ico">
     <link rel="stylesheet" href="../css/prihlaseni.css">
 </head>
 <body>
