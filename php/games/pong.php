@@ -12,7 +12,6 @@
 
     <div class="menuBTN">
         <a href="../../index.php" class="btn1">Domů</a>
-        <a href="../nabidkaHer.php" class="btn1">Zpět</a>
     </div>
 
     <div id="pongDiv">
