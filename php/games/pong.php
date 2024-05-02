@@ -9,7 +9,18 @@
     <script src="../../scripts/pongGame.js"></script>
 </head>
 <body>
-    <?php include "../header.php" ?>
+<header>
+    <div class="header">
+    <div class="header-title">
+        <h1>M - Games</h1>
+        <hr>
+    </div>
+    <nav class="header-btn">
+        <a href="../forum.php" class="btn1">Forum |</a>
+        <a href="../kontakt.php" class="btn1">Contact us</a>
+    </nav>
+    </div>
+</header>
 
     <div class="menuBTN">
         <a href="../../index.php" class="btn1">Domů</a>

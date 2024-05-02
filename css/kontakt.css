@@ -3,12 +3,55 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Outfit';
-    background: linear-gradient(#b0ebff,#aaccff);
+body {
+    font-family: Calibri;
+    margin: 0; /* Přidáno pro jistotu, aby se vymazaly implicitní okraje */
+    background: linear-gradient(135deg,#05012b,#420101);
+    background-attachment: fixed; /* Přichycení pozadí k oknu prohlížeče */
 }
+header {
+    background: linear-gradient(135deg, #04021b, #210101);
+    padding: 5px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-title a{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header-title hr {
+    border: none;
+    width: 175%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-btn a:hover {
+    font-size: 25px;
+}
+
 .contact-container{
-    height: 100vh;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -18,18 +61,21 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 15px;
 }
 .contact-left-title h2{
     font-weight: 600;
-    color: rgb(61, 61, 232);
+    color: #fff;
     font-size: 40px;
     margin-bottom: 5px;
 }
 .contact-left-title hr{
     border: none;
-    width: 120px;
+    width: 150%;
     height: 5px;
-    background-color: rgb(61, 61, 232);
+    background-color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -40,9 +86,14 @@ body{
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    color: #666;
+    color: #fff;
     border-radius: 50px;
+    background-image: linear-gradient(135deg, #154399, #1269bb);
+    font-size: 14px;
+    border-radius: 15px;
 }
+
+
 .contact-left textarea{
     height: 140px;
     padding-top: 15px;
@@ -55,25 +106,29 @@ body{
 .contact-inputs::placeholder{
     color: #a9a9a9;
 }
-.contact-left button{
+.contact-left button {
     display: flex;
     align-items: center;
+    justify-content: center; /* Zarovnání obsahu na střed */
+    margin: 5px auto; /* Vytvoření odstupu mezi tlačítkem a ostatními prvky */
     padding: 15px 30px;
     font-size: 16px;
     color: #fff;
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(270deg, #4f98ff, rgb(61, 61, 232));
+    background-image: linear-gradient(135deg, #170f4e, #0a2c77);
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-
-.contact-left button img{
-    height: 15px;
+.contact-left button:hover {
+    background-image: linear-gradient(135deg, #142985, #0f5ec7);
 }
+
 .contact-right img{
-    width: 500px;
+    width: 450px;
     border-radius: 50px;
 }
 

@@ -9,30 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php include "php/header.php" ?>
-    
-    <main>
-        <div class="menuBTN">
-            <a href="php/prihlaseni.php" class="btn1">Přihlášení</a>
-            <a href="php/kontakt.php" class="btn1">Kontakt</a>
+
+    <header>
+        <div class="header">
+        <div class="header-title">
+            <a>M - Games</a>
+            <hr>
         </div>
+        <nav class="header-btn">
+            <a href="php/forum.php" class="btn1">Forum |</a>
+            <a href="php/kontakt.php" class="btn1">Contact us</a>
+        </nav>
+        </div>
+    </header>
 
-        <div class="gamesDiv">
-            <a class="gamesButton" href="php/games/pong.php">
-            <img src="images/ping-pong.png" height="200" width="200">
-            <br>
-            <span>Pong</span>
-            </a>
 
-            <a class="gamesButton" href="php/games/breakout.php">
-            <img src="images/breakout.png" height="200" width="200">
-            <br>
-            <span>Breakout</span>
-            </a>
+    <main>
+        <div class="index_container">
+            <div class="index_left">
+                <div class="gamesDiv">
+                    <a class="gamesButton" href="php/games/pong.php">
+                        <img src="images/ping-pong.png" height="200" width="200">
+                        <br>
+                        <span>Pong</span>
+                    </a>
+                    <a class="gamesButton" href="php/games/breakout.php">
+                        <img src="images/breakout.png" height="200" width="200">
+                        <br>
+                        <span>Breakout</span>
+                    </a>
+                </div>
+            </div>
+            <div class="index_right">
+                <a href="https://www.youtube.com/shorts/XR7ra0vC4Io"><!-- <a href="https://www.youtube.com/watch?v=q-Y0bnx6Ndw"> -->
+                    <img src="images/M_GAMES_img.png">
+                </a>
+            </div>
         </div>
     </main>
-    
-
     <footer>
         &copy; M - games
     </footer>
