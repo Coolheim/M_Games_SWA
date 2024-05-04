@@ -33,21 +33,27 @@ if(isset($_POST["submit"])){
     </div>
 </header>
 <main>
-  <div class="container">
-    <?php
-    $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0");
-    foreach($datas as $data) {
-      require 'forum/comment.php';
-    }
-    ?>
-    <form action="" method="post">
-      <h3 id="title">Leave a Comment</h3>
-      <input type="hidden" name="reply_id" id="reply_id">
-      <input type="text" name="name" placeholder="Your name">
-      <textarea name="comment" placeholder="Your comment"></textarea>
-      <button class="submit" type="submit" name="submit">Submit</button>
-    </form>
+  <div class="left-container">
+    <div class="container">
+      <?php
+      $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0");
+      foreach($datas as $data) {
+        require 'forum/comment.php';
+      }
+      ?>
+      <form action="" method="post">
+        <h3 id="title">Leave a Comment</h3>
+        <input type="hidden" name="reply_id" id="reply_id">
+        <input type="text" name="name" placeholder="Your name">
+        <textarea name="comment" placeholder="Your comment"></textarea>
+        <button class="submit" type="submit" name="submit">Submit</button>
+      </form>
+    </div>
   </div>
+  <div class="right-container">
+      <img src="../images/forum_background.png">
+  </div>
+  
 </main>
   
 <script>

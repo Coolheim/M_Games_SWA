@@ -1,14 +1,14 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Calibri;
-    margin: 0; /* Přidáno pro jistotu, aby se vymazaly implicitní okraje */
-    background: linear-gradient(135deg,#05012b,#420101);
-    background-attachment: fixed; /* Přichycení pozadí k oknu prohlížeče */
+    background: linear-gradient(135deg, #05012b, #420101);
+    background-attachment: fixed;
+    overflow-y: scroll; /* Povolí svislý posuvník, pokud je obsah delší než okno prohlížeče */
 }
 
 header {
@@ -26,8 +26,7 @@ header {
     align-items: center;
 }
 
-
-.header-title a{
+.header-title a {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
@@ -53,21 +52,37 @@ header {
 }
 
 main {
-    padding: 20px;
-    height: 100vh; /* Tento řádek zajistí, že main zabere celou výšku obrazovky */
-    background: linear-gradient(135deg,#05012b,#420101);
-    background-attachment: fixed; /* Přichycení pozadí k oknu prohlížeče */
+    padding: 40px 0; /* Větší padding */
+    background: linear-gradient(135deg, #05012b, #420101);
+    background-attachment: fixed;
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Zarovnání na střed */
+}
+
+.right-container {
+    padding-left: 100px;
+}
+
+.right-container img {
+    max-width: 100%; /* Zajistí, že obrázek nevyčuhuje z kontejneru */
+    border-radius: 50px;
+    width: 80%; /* Obrázek zaujme celý dostupný prostor */
+}
+
+.left-container {
+    flex: 1; /* Pevná šířka pro pravý kontejner */
+    padding-left: 50px; /* Zarovnávání na střed */
 }
 
 .container {
     background: linear-gradient(135deg, #070424, #270101);
-    width: 75%;
-    margin: 0 auto; /* Umístí kontejner na střed vodorovně */
     padding-top: 1px;
     padding-bottom: 5px;
     border-radius: 15px;
     border: 1px solid #fff;
-    text-align: center; /* Zarovná obsah kontejneru na střed */
+    text-align: center;
+    flex: 1; /* Kontejner zaplní dostupné místo */
+    width: 100%; /* Šířka 100% */
 }
 
 .comment,
@@ -89,7 +104,7 @@ p {
     font-size: 16px;
 }
 
-h4{
+h4 {
     color: #fff;
     font-size: 20px;
 }
@@ -107,12 +122,11 @@ form h3 {
     margin-bottom: 5px;
 }
 
-/* Ponechat styly pro vstupy a textová pole */
 form input,
 form textarea {
     width: 75%;
     padding: 10px;
-    margin: 0 auto 20px; /* Umožní vše umístit na střed */
+    margin: 0 auto 20px;
     background-image: linear-gradient(135deg, #154399, #1269bb);
     color: #fff;
     font-size: 14px;
@@ -120,23 +134,21 @@ form textarea {
 }
 
 form input::placeholder,
-form textarea::placeholder{
+form textarea::placeholder {
     color: #c0c0c0;
 }
 
-/* Nastavení výchozí výšky textarea na 5 řádků */
 form textarea {
     height: auto;
-    min-height: 100px; /* Zajišťuje, že textarea bude vždy alespoň 5 řádků vysoká */
-    overflow-y: auto; /* Zobrazí svislý posuvník, pokud je obsah delší než výchozí výška */
-    resize: vertical; /* Umožní uživateli změnit výšku textarea pouze ve vertikálním směru */
+    min-height: 100px;
+    overflow-y: auto;
+    resize: vertical;
 }
 
-/* Ponechat původní styly pro tlačítka a upravit je na střed */
 form button.submit,
 button.reply {
     display: block;
-    margin: 0 auto 20px; /* Umožní umístit tlačítka na střed */
+    margin: 0 auto 20px;
     width: 75%;
     font-weight: bold;
     font-size: 18px;
@@ -152,10 +164,20 @@ form button.submit:hover {
     background-image: linear-gradient(135deg, #142985, #0f5ec7);
 }
 
-button.reply {  
+button.reply {
     background-image: linear-gradient(135deg, #2b0505, #6b0303);
 }
 
-button.reply:hover {  
+button.reply:hover {
     background-image: linear-gradient(135deg, #410b0b, #960606);
+}
+
+@media (max-width: 1000px) {
+    .right-container img {
+        display: none; /* Skryje obrázek */
+    }
+
+    .left-container {
+        padding-left: 50px; /* Zarovnávání na střed */
+    }
 }
