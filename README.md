@@ -23,8 +23,3 @@
 #### --- breakout.js
 #### --- pong.js
 #### - index.php
-
-
-
-
-### !!! vždy se musí vytvořit databáze s názvem "m_games" a stůl s názvem "forum_data" !!!
