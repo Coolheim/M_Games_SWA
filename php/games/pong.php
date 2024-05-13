@@ -6,27 +6,23 @@
     <title>Pong Game</title>
     <link rel="stylesheet" href="../../css/pong.css">
     <link rel="icon" type="image/x-icon" href="../../images/mgames_favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../../scripts/pongGame.js"></script>
 </head>
 <body>
-<header>
-        <div class="header">
-        <div class="header-title">
-            <a>M - Games</a>
-            <hr>
-        </div>
-        <nav class="header-btn">
-            <div class="nabidka">
-            <a href="../../index.php">Domů</a>
-            <p>|</p>
-            <a href="../forum.php" class="btn1">Forum</a>
-            <p>|</p>
-            <a href="../kontakt.php" class="btn1">Contact us</a>
-  
-            </div>
-        </nav>
-        </div>
-    </header>
+    <!-- Hlavička -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="	fa fa-th-list"></i>
+        </label>
+        <label class="logo">M - games</label>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../forum.php">Forum</a></li>
+            <li><a href="../kontakt.php">Contact us</a></li>
+        </ul>
+    </nav>
 
 
     <div id="pongDiv">

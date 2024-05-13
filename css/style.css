@@ -1,122 +1,214 @@
-*{
+/* Základní styl */
+* {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
+    font-family: calibri;
 }
-body{
-    font-family: Calibri;
-    
-}
-header{
+
+/* Záhlaví */
+nav {
     background: linear-gradient(135deg,#04021b,#210101);
-    padding: 5px;
-}
-
-.header{
-    top: 0;
-    left: 0;
+    height: 80px;
     width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.header-title a{
+label.logo {
     color: #fff;
     font-size: 50px;
-    font-weight: 600;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
 
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
-.header-title hr{
-    border: none;
-    width: 175%;
-    height: 5px;
-    background-color:  #fff;
-    border-radius: 10px;
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
-.header-btn a{
+
+nav ul li a {
     color: #fff;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
-.header-btn a:hover{
-    font-size: 25px;
+
+a.active, a:hover {
+    background-color: #ababab5f;
+    transition: .5s;
 }
-.index_container{
-    height: auto;
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg,#0b0452,#550303);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #ababab5f;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Obsah */
+main {
+    background: linear-gradient(135deg,#05012b,#420101);
+    height: calc(100vh - 80px); /* Výška obsahu je 100% minus výška záhlaví */
+    width: 100%; /* Rozšíření na celou šířku */
+    overflow-y: auto; /* Povolení svislého posouvání obsahu, pokud je to potřeba */
+    margin-top: -1px; /* Odstranění mezery mezi záhlavím a obsahem */
+}
+
+.index_container {
+    height: 100%; /* Umožní obsahu růst až na výšku main */
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column; /* Obsah bude sloupcově */
+    align-items: center; /* Zarovnání na střed na ose Y */
+    justify-content: center; /* Zarovnání na střed na ose X */
     padding: 50px;
 }
-.index_left{
+
+
+
+
+.index_left {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-.index_right img{
-    width: 450px;
+
+.index_right img {
+    width: 400px;
     border-radius: 20px;
 }
-.index_right a:hover{
+
+.index_right a:hover {
     cursor: default;
 }
 
 .gamesButton {
     cursor: pointer;
-    display: inline-block; /* Přidáno pro umístění vedle sebe */
+    display: inline-block;
     padding: 25px;
     border: 4px solid #fff;
     border-radius: 5px;
-    /* background-color: rgb(218, 217, 218); */
     background-image: linear-gradient(135deg, #0c0636,#5c0505);
     text-align: center;
     text-decoration: none;
-    margin: 0 30px; /* Mezera mezi tlačítky */
-    width: fit-content; /* Nastavení šířky podle obsahu */
+    margin: 0 30px;
+    width: fit-content;
 }
+
 .gamesButton:hover {
     border: 8px solid #fff;
     background-image: linear-gradient(135deg, #160c58,#790909);
 }
+
 .gamesButton img {
     vertical-align: middle;
 }
+
 .gamesButton span {
     font-size: 35px;
     font-weight: bolder;
     color: #fff;
-    
 }
+
 .gamesDiv {
     padding-top: 50px;
     display: flex;
-    justify-content: center; /* Zarovnání obsahu vodorovně na střed */
+    justify-content: center;
 }
 
-main {
+body {
+    font-family: Calibri;
+    margin: 0; /* Přidáno pro jistotu, aby se vymazaly implicitní okraje */
     background: linear-gradient(135deg,#05012b,#420101);
-    height: calc(100vh - (2rem + 10px)); /* 2rem pro padding v headeru, 10px pro padding v footeru */
+    background-attachment: fixed;
 }
 
-footer {
-    background: linear-gradient(135deg,#04021b,#210101);
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    font-family: Arial;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
+#board {
+    margin: 50px auto 0; /* 50px horní mezera, automatické zarovnání vodorovně, 0px spodní mezera */
+    width: 70%; /* Pevná šířka, která se mění s velikostí okna */
+    max-width: 800px; /* Maximální šířka pro zabránění přílišnému roztažení */
+    display: block;
+    background-color: rgb(0, 0, 0);
+    border-top: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
 }
 
-.nabidka a{
-    display: inline-block;
+@media screen and (max-width: 800px) {
+    #board {
+        width: 60%; /* Upravit podle potřeby */
+    }
 }
-.nabidka p{
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
+
+@media screen and (max-width: 600px) {
+    #board {
+        width: 50%; /* Upravit podle potřeby */
+    }
+}
+
+@media (max-width: 1000px) {
+    .index_right img {
+        display: none; /* Skryje obrázek, když je šířka okna menší než 1000px */
+    }
 }
