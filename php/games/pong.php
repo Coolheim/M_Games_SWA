@@ -10,21 +10,24 @@
 </head>
 <body>
 <header>
-    <div class="header">
-    <div class="header-title">
-        <h1>M - Games</h1>
-        <hr>
-    </div>
-    <nav class="header-btn">
-        <a href="../forum.php" class="btn1">Forum |</a>
-        <a href="../kontakt.php" class="btn1">Contact us</a>
-    </nav>
-    </div>
-</header>
+        <div class="header">
+        <div class="header-title">
+            <a>M - Games</a>
+            <hr>
+        </div>
+        <nav class="header-btn">
+            <div class="nabidka">
+            <a href="../../index.php">Domů</a>
+            <p>|</p>
+            <a href="../forum.php" class="btn1">Forum</a>
+            <p>|</p>
+            <a href="../kontakt.php" class="btn1">Contact us</a>
+  
+            </div>
+        </nav>
+        </div>
+    </header>
 
-    <div class="menuBTN">
-        <a href="../../index.php" class="btn1">Domů</a>
-    </div>
 
     <div id="pongDiv">
         <canvas id="board"></canvas> <!-- Game -->

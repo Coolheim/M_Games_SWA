@@ -111,3 +111,12 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+.nabidka a{
+    display: inline-block;
+}
+.nabidka p{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}

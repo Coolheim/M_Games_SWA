@@ -140,3 +140,12 @@ header {
         display: none;
     }
 }
+
+.nabidka a{
+    display: inline-block;
+}
+.nabidka p{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}

@@ -17,8 +17,14 @@
             <hr>
         </div>
         <nav class="header-btn">
-            <a href="php/forum.php" class="btn1">Forum |</a>
+            <div class="nabidka">
+            <a href="#">Domů</a>
+            <p>|</p>
+            <a href="php/forum.php" class="btn1">Forum</a>
+            <p>|</p>
             <a href="php/kontakt.php" class="btn1">Contact us</a>
+  
+            </div>
         </nav>
         </div>
     </header>

@@ -181,3 +181,12 @@ button.reply:hover {
         padding-left: 50px; /* Zarovnávání na střed */
     }
 }
+
+.nabidka a{
+    display: inline-block;
+}
+.nabidka p{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
