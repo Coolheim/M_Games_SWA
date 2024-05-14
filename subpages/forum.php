@@ -65,24 +65,12 @@ if(isset($_POST["submit"])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/forum.css"> <!-- Odkaz na externí CSS soubor -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="images/mgames_favicon.ico">
+  <link rel="icon" type="image/x-icon" href="../images/mgames_favicon.ico">
   <title>Document</title>
 </head>
 <body>
     <!-- Hlavička -->
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="	fa fa-th-list"></i>
-        </label>
-        <label class="logo">M - games</label>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="forum.php" class="active">Forum</a></li>
-            <li><a href="kontakt.php">Contact us</a></li>
-        </ul>
-    </nav>
-
+    <?php include "../php/hlavicka.php" ?>
 
 <main>
   <div class="left-container">
@@ -90,7 +78,7 @@ if(isset($_POST["submit"])){
       <?php
       $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0");
       foreach($datas as $data) {
-        require 'forum/comment.php';
+        require '../php/comment.php';
       }
       ?>
       <form action="" method="post">
