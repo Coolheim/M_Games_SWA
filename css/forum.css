@@ -1,0 +1,240 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+body {
+    font-family: Calibri;
+    background: linear-gradient(135deg, #05012b, #420101);
+    background-attachment: fixed;
+    overflow-y: scroll; /* Povolí svislý posuvník, pokud je obsah delší než okno prohlížeče */
+}
+
+nav{
+    background: linear-gradient(135deg,#04021b,#210101);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: #fff;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background-color: #ababab5f;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg,#0b0452,#550303);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #ababab5f;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+main {
+    padding: 40px 0; /* Větší padding */
+    background: linear-gradient(135deg, #05012b, #420101);
+    background-attachment: fixed;
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Zarovnání na střed */
+}
+
+.right-container {
+    padding-left: 5%;
+}
+
+.right-container img {
+    margin-top: 20%;
+    max-width: 100%; /* Zajistí, že obrázek nevyčuhuje z kontejneru */
+    border-radius: 50px;
+    width: 80%; /* Obrázek zaujme celý dostupný prostor */
+}
+
+.left-container {
+    flex: 1; /* Pevná šířka pro pravý kontejner */
+    padding-left: 10%;
+}
+
+.container {
+    background: linear-gradient(135deg, #070424, #270101);
+    padding-top: 1px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    text-align: center;
+    flex: 1; /* Kontejner zaplní dostupné místo */
+    width: 90%; /* Šířka 100% */
+}
+
+.comment,
+.reply {
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.reply {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+form {
+    margin: 10px;
+}
+
+form h3 {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto 20px;
+    background-image: linear-gradient(135deg, #154399, #1269bb);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #c0c0c0;
+}
+
+form textarea {
+    height: auto;
+    min-height: 100px;
+    overflow-y: auto;
+    resize: vertical;
+}
+
+form button.submit,
+button.reply {
+    display: block;
+    margin: 0 auto 20px;
+    width: 75%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+    background-image: linear-gradient(135deg, #170f4e, #0a2c77);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+form button.submit:hover {
+    background-image: linear-gradient(135deg, #142985, #0f5ec7);
+}
+
+button.reply {
+    background-image: linear-gradient(135deg, #2b0505, #6b0303);
+}
+
+button.reply:hover {
+    background-image: linear-gradient(135deg, #410b0b, #960606);
+}
+
+@media (max-width: 1000px) {
+    .right-container img {
+        display: none; /* Skryje obrázek */
+    }
+
+    .left-container {
+        padding-left: 50px; /* Zarovnávání na střed */
+    }
+}
+
+.nabidka a{
+    display: inline-block;
+}
+.nabidka p{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
