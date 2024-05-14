@@ -70,7 +70,6 @@ if(isset($_POST["submit"])){
 </head>
 <body>
     <!-- Hlavička -->
-<<<<<<< HEAD
     <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -79,13 +78,11 @@ if(isset($_POST["submit"])){
     <label class="logo">M - games</label>
     <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="forum.php">Forum</a></li>
-        <li><a href="kontakt.html" class="active">Contact us</a></li>
+        <li><a href="forum.php" class="active">Forum</a></li>
+        <li><a href="kontakt.html">Contact us</a></li>
+        <li><a href="https://www.termsfeed.com/live/5e8325a9-eb75-4b99-ae67-5bb9089f8efe">Privacy Policy</a></li>
     </ul>
 </nav>
-=======
-    <?php include "../php/hlavicka.php" ?>
->>>>>>> d31e53329f07af1217648a0db2869b699ccf3b06
 
 <main>
   <div class="left-container">
