@@ -118,12 +118,11 @@ a.active, a:hover {
 
 /* Obsah */
 .contact-container {
-    height: 100vh; /* Zaplní celou výšku obrazovky */
     display: flex;
     align-items: center; /* Zarovnání na střed na ose Y */
     justify-content: center; /* Zarovnání na střed na ose X */
-    gap: 30px; /* Odstup mezi prvky */
-    padding: 30px; /* Odsazení okolo obsahu */
+    gap: 10%; /* Odstup mezi prvky */
+    padding: 10%; /* Odsazení okolo obsahu */
 }
 
 .contact-left {
@@ -205,4 +204,10 @@ a.active, a:hover {
 .contact-right img {
     width: 450px;
     border-radius: 50px;
+}
+
+@media (max-width: 1000px) {
+    .contact-right img {
+        display: none; /* Skryje obrázek */
+    }
 }

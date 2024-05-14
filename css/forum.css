@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 *{
     padding: 0;
     margin: 0;
@@ -111,10 +107,11 @@ main {
 }
 
 .right-container {
-    padding-left: 100px;
+    padding-left: 5%;
 }
 
 .right-container img {
+    margin-top: 20%;
     max-width: 100%; /* Zajistí, že obrázek nevyčuhuje z kontejneru */
     border-radius: 50px;
     width: 80%; /* Obrázek zaujme celý dostupný prostor */
@@ -122,7 +119,7 @@ main {
 
 .left-container {
     flex: 1; /* Pevná šířka pro pravý kontejner */
-    padding-left: 50px; /* Zarovnávání na střed */
+    padding-left: 10%;
 }
 
 .container {
@@ -133,7 +130,7 @@ main {
     border: 1px solid #fff;
     text-align: center;
     flex: 1; /* Kontejner zaplní dostupné místo */
-    width: 100%; /* Šířka 100% */
+    width: 90%; /* Šířka 100% */
 }
 
 .comment,

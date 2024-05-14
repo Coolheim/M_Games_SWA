@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M_Games - kontakt</title>
     <link rel="stylesheet" href="..\css\kontakt.css">
+    <link rel="icon" type="image/x-icon" href="images/mgames_favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -36,9 +37,7 @@
             <button type="submit">Submit</button>
         </form>
         <div class="contact-right">
-            <a href="https://www.youtube.com/watch?v=q-Y0bnx6Ndw">
-                <img src="../images/kontaktImg.png">
-            </a>
+            <img src="../images/kontaktImg.png">
         </div>
     </div>
 </body>

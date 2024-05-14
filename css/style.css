@@ -118,12 +118,13 @@ main {
 }
 
 .index_container {
-    height: 100%; /* Umožní obsahu růst až na výšku main */
+    /* height: 100%; Umožní obsahu růst až na výšku main */
     display: flex;
-    flex-direction: column; /* Obsah bude sloupcově */
+    /* flex-direction: column; Obsah bude sloupcově */
     align-items: center; /* Zarovnání na střed na ose Y */
     justify-content: center; /* Zarovnání na střed na ose X */
-    padding: 50px;
+    padding-top: 10%;
+    gap: 10%;
 }
 
 
@@ -134,9 +135,14 @@ main {
     flex-direction: column;
     align-items: start;
 }
+.index_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Upraveno pro zarovnání na střed horizontálně */
+}
 
 .index_right img {
-    width: 400px;
+    width: 500px;
     border-radius: 20px;
 }
 
@@ -153,13 +159,14 @@ main {
     background-image: linear-gradient(135deg, #0c0636,#5c0505);
     text-align: center;
     text-decoration: none;
-    margin: 0 30px;
+    margin: 20px 30px; /* Upraveno, aby tlačítka měla více prostoru nahoře a dole */
     width: fit-content;
 }
-
 .gamesButton:hover {
-    border: 8px solid #fff;
+    /*border: 8px solid #fff;*/
+    scale: 110%;
     background-image: linear-gradient(135deg, #160c58,#790909);
+    transition: 0,25s;
 }
 
 .gamesButton img {
@@ -171,11 +178,12 @@ main {
     font-weight: bolder;
     color: #fff;
 }
-
 .gamesDiv {
     padding-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center; /* Upraveno pro zarovnání na střed vertikálně */
+    flex-wrap: wrap; /* Přidáno pro umožnění zalomení prvků na nový řádek */
 }
 
 body {
@@ -185,30 +193,13 @@ body {
     background-attachment: fixed;
 }
 
-#board {
-    margin: 50px auto 0; /* 50px horní mezera, automatické zarovnání vodorovně, 0px spodní mezera */
-    width: 70%; /* Pevná šířka, která se mění s velikostí okna */
-    max-width: 800px; /* Maximální šířka pro zabránění přílišnému roztažení */
-    display: block;
-    background-color: rgb(0, 0, 0);
-    border-top: 5px solid skyblue;
-    border-bottom: 5px solid skyblue;
-}
-
-@media screen and (max-width: 800px) {
-    #board {
-        width: 60%; /* Upravit podle potřeby */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #board {
-        width: 50%; /* Upravit podle potřeby */
-    }
-}
-
 @media (max-width: 1000px) {
     .index_right img {
         display: none; /* Skryje obrázek, když je šířka okna menší než 1000px */
+    }
+}
+@media (max-width: 600px) {
+    .gamesButton {
+        margin: 20px 10px; /* Snížení mezery mezi tlačítky na menších obrazovkách */
     }
 }
