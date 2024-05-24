@@ -1,7 +1,7 @@
 # M - Games
 odkaz: http://swa-mgames.rf.gd/
 
-#Použité jazyky:
+## použité jazyky
 <ul>
     <li>HTML</li> (základní struktura stránky)
     <li>CSS</li> (nastylování stránky)
